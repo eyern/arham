@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Arham Dental Care — Premium dental clinic offering world-class dental treatments with cutting-edge technology and compassionate care. Book your appointment today.">
+    <title>Booking Appointment</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- NAVIGATION                                   -->
+    <!-- ════════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <img src="images/arham-logo-removebg-preview.png" alt="" width="50" height="50" />
+            </a>
+
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="index.html" class="navbar__link">Home</a></li>
+                <li><a href="about.html" class="navbar__link">About Arham Dental</a></li>
+                <li><a href="services.html" class="navbar__link">Our Services</a></li>
+                <li><a href="booking.html" class="navbar__link active">Booking</a></li>
+                <li><a href="gallery.html" class="navbar__link">Our Gallery</a></li>
+                <li><a href="index.html" class="navbar__link">Reviews</a></li>
+                <li><a href="contact.html" class="navbar__link">Contact Us</a></li>
+            </ul>
+
+            <div class="navbar__actions">
+                <a href="tel:+254726544509" class="btn btn--primary btn--sm">
+                    <i class="ph ph-calendar-plus"></i>
+                    Book Appointment
+                </a>
+                <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dental-breadcrumb">
+        <div class="breadcrumb-overlay"></div>
+        <div class="breadcrumb-container">
+          <h1 class="breadcrumb-title">Shedule Appointment</h1>
+          <ul class="breadcrumb-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Book Appointment</li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- APPOINTMENT SECTION                          -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="appointment" id="appointment">
+        <div class="container appointment__inner">
+            <div class="appointment__content reveal">
+                <span class="section-tag section-tag--light">Book Now</span>
+                <h2 class="section-title section-title--light">Ready for a <span class="text-gradient">Brighter
+                        Smile</span>?</h2>
+                <p class="appointment__desc">
+                    Schedule your appointment today and take the first step toward the smile you've always wanted.
+                    Our team is ready to welcome you.
+                </p>
+
+                <div class="appointment__perks">
+                    <div class="appointment__perk">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Free Initial Consultation</span>
+                    </div>
+                    <div class="appointment__perk">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Flexible Payment Plans</span>
+                    </div>
+                    <div class="appointment__perk">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Same-Day Appointments</span>
+                    </div>
+                    <div class="appointment__perk">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <span>Insurance Accepted</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appointment__form-wrapper reveal reveal--delay-1">
+                <form class="appointment__form" id="appointmentForm">
+                    <h3 class="appointment__form-title">Book Your Visit</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="+254712345678" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="general">General Check-up</option>
+                            <option value="cosmetic">Cosmetic Dentistry</option>
+                            <option value="implants">Dental Implants</option>
+                            <option value="orthodontics">Orthodontics</option>
+                            <option value="pediatric">Pediatric Dentistry</option>
+                            <option value="emergency">Emergency Care</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" rows="3" placeholder="Tell us about your concern..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">
+                        <i class="ph ph-paper-plane-tilt"></i>
+                        Submit Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- CONTACT SECTION                              -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Visit Our <span class="text-gradient">Clinic</span></h2>
+                <p class="section-desc">We're here to help. Reach out to us anytime for inquiries or to schedule a
+                    visit.</p>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact-card reveal">
+                    <div class="contact-card__icon">
+                        <i class="ph-fill ph-map-pin"></i>
+                    </div>
+                    <h4 class="contact-card__title">Our Location</h4>
+                    <p class="contact-card__text">Basma Plaza 12 Street<br> Eastliegh Nairobi.</p>
+                </div>
+
+                <div class="contact-card reveal reveal--delay-1">
+                    <div class="contact-card__icon contact-card__icon--cyan">
+                        <i class="ph-fill ph-phone"></i>
+                    </div>
+                    <h4 class="contact-card__title">Call/Whatsapp</h4>
+                    <p class="contact-card__text">0726-544-509</p>
+                </div>
+
+                <div class="contact-card reveal reveal--delay-2">
+                    <div class="contact-card__icon contact-card__icon--green">
+                        <i class="ph-fill ph-clock"></i>
+                    </div>
+                    <h4 class="contact-card__title">Working Hours</h4>
+                    <p class="contact-card__text">Mon – Sat: 8:00 AM – 8:00 PM</p>
+                </div>
+
+                <div class="contact-card reveal reveal--delay-3">
+                    <div class="contact-card__icon contact-card__icon--purple">
+                        <i class="ph-fill ph-envelope-simple"></i>
+                    </div>
+                    <h4 class="contact-card__title">Email Us</h4>
+                    <p class="contact-card__text">info@arhamdentalcare.co.ke</p>
+                </div>
+            </div>
+
+            <div class="contact__map reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.33591741889!2d36.815673644851394!3d-1.2730622709795318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f16b02d007251%3A0xb8beb2dbf14a0af4!2sEastleigh%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1786224012737!5m2!1sen!2ske"
+                    width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="DentaCare Location Map">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- FOOTER                                       -->
+    <!-- ════════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="navbar__logo">
+                        <img src="images/arham-logo-removebg-preview.png" alt="" width="50" height="50" />
+                    </a>
+                    <p class="footer__brand-desc">
+                        Transforming smiles with world-class dental care.
+                        Your trusted partner for a healthier, brighter smile.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><i
+                                class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram"><i
+                                class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="https://www.tiktok.com/@dr.abdinaa" class="footer__social-link" aria-label="YouTube"><i
+                                class="ph-fill ph-tiktok-logo"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="services.html">What we do</a></li>
+                        <li><a href="contact.html">Directions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links-group">
+                    <h4 class="footer__links-title">Our Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="services.html">General Dentistry</a></li>
+                        <li><a href="services.html">Cosmetic Dentistry</a></li>
+                        <li><a href="services.html">Dental Implants</a></li>
+                        <li><a href="services.html">Orthodontics</a></li>
+                        <li><a href="services.html">Emergency Care</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy;2026 Arham Dental Care | Designed by Eyern</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTIONS -->
+    <div class="fl-a">
+        <a href="tel:+254726544509" class="flb cl" title="Call 0726-544-509">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.43 10.34 19.79 19.79 0 01.36 1.75 2 2 0 012.34 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+        </a>
+        <a href="https://wa.me/254726544509?text=Hi!%20I'm%20from%20Arham%20Dental%20website%20😊%20." target="_blank"
+            class="flb wa" title="WhatsApp 0714-881-860">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                    d="M11.999 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.868-1.426A9.945 9.945 0 0012 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm0 18a7.95 7.95 0 01-4.071-1.118l-.291-.173-3.018.883.849-3.1-.19-.309A7.977 7.977 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
